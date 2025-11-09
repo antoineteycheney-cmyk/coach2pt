@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>coah2PT — Coach IA connecté à Garmin</title>
+  <meta name="description" content="coah2PT analyse vos données Garmin et génère des recommandations personnalisées." />
+  <style>
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:#111; }
+    header, footer { background:#fff; border-bottom:1px solid #eee; }
+    .wrap { max-width: 1000px; margin: 0 auto; padding: 16px; }
+    .btn { display:inline-block; padding:12px 18px; border-radius:12px; background:#4f46e5; color:#fff; text-decoration:none; }
+    .btn.alt { background:#fff; color:#4f46e5; border:1px solid #d0d0ff; }
+    .hero { background: linear-gradient(#ffffff, #f7f7fb); }
+    .grid { display: grid; gap: 16px; }
+    @media (min-width: 900px){ .grid-3 { grid-template-columns: repeat(3, 1fr); } .grid-4 { grid-template-columns: repeat(4, 1fr); } }
+    .card { border:1px solid #eee; background:#fff; border-radius:16px; padding:16px; }
+    small.muted { color:#666 }
+    nav a { margin-right:14px; color:#333; text-decoration:none; }
+    nav a:hover { color:#4f46e5; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap" style="display:flex; align-items:center; justify-content:space-between;">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <div style="width:40px;height:40px;border-radius:12px;background:#4f46e5;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;">C2</div>
+        <strong>coah2PT</strong>
+      </div>
+      <nav>
+        <a href="#features">Fonctionnalités</a>
+        <a href="#how">Comment ça marche</a>
+        <a href="#security">RGPD</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap" style="padding:48px 16px;">
+      <h1 style="font-size:40px; line-height:1.1; margin:0 0 12px;">Votre coach IA connecté à <span style="color:#4f46e5;">Garmin</span></h1>
+      <p style="max-width:700px; color:#444;">coah2PT analyse vos données Garmin (sommeil, fréquence cardiaque, activité) et génère des recommandations personnalisées, au bon moment.</p>
+      <div style="margin-top:18px;">
+        <a class="btn" href="#onboard">Commencer</a>
+        <a class="btn alt" href="#features" style="margin-left:8px;">Voir les fonctionnalités</a>
+      </div>
+      <p><small class="muted">✅ Consentement explicite · 🔒 HTTPS & chiffrement · 🇪🇺 Conforme RGPD</small></p>
+
+      <div class="grid grid-4" style="margin-top:24px;">
+        <div class="card"><small class="muted">Pas (aujourd'hui)</small><div style="font-size:24px;font-weight:700;">10 983</div></div>
+        <div class="card"><small class="muted">FC repos</small><div style="font-size:24px;font-weight:700;">59 bpm</div></div>
+        <div class="card"><small class="muted">Sommeil</small><div style="font-size:24px;font-weight:700;">7 h 03</div></div>
+        <div class="card"><small class="muted">Stress</small><div style="font-size:24px;font-weight:700;">35</div></div>
+      </div>
+
+      <div class="card" style="margin-top:24px; border-color:#dfe2ff; background:#f6f7ff;">
+        <small class="muted" style="color:#3730a3;font-weight:700;">Bilan IA — exemple</small>
+        <p style="color:#1f2a7a;">Sommeil satisfaisant et FC repos stable. Privilégiez une séance d’endurance facile et 10 min d’étirements.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap" style="padding:40px 16px;">
+      <h2>Fonctionnalités</h2>
+      <div class="grid grid-3" style="margin-top:16px;">
+        <div class="card"><strong>Bilan quotidien</strong><p>Résumé clair : sommeil, stress, activité, récupération.</p></div>
+        <div class="card"><strong>Rapport hebdomadaire</strong><p>Tendances, charge d’entraînement, plan.</p></div>
+        <div class="card"><strong>Conseils actionnables</strong><p>2–3 actions concrètes adaptées à votre profil.</p></div>
+        <div class="card"><strong>Confidentialité</strong><p>Minimisation des données, chiffrement.</p></div>
+        <div class="card"><strong>Opt-in & révocation</strong><p>Connexion/déconnexion à tout moment.</p></div>
+        <div class="card"><strong>Export & suppression</strong><p>Export de données et droit à l’oubli.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" style="background:#f7f7fb;">
+    <div class="wrap" style="padding:40px 16px;">
+      <h2>Comment ça marche</h2>
+      <ol class="grid grid-4" style="margin-top:16px;">
+        <li class="card"><small class="muted">Étape 1</small><strong> Connexion Garmin</strong><p>Vous autorisez coah2PT (consentement explicite).</p></li>
+        <li class="card"><small class="muted">Étape 2</small><strong> Réception sécurisée</strong><p>Résumé quotidien via HTTPS, base chiffrée.</p></li>
+        <li class="card"><small class="muted">Étape 3</small><strong> Analyse IA</strong><p>Génération d’un bilan + conseils.</p></li>
+        <li class="card"><small class="muted">Étape 4</small><strong> Restitution</strong><p>Résumé clair dans l’app/Chat.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="security">
+    <div class="wrap" style="padding:40px 16px;">
+      <h2>Sécurité & RGPD</h2>
+      <ul>
+        <li>HTTPS et chiffrement au repos.</li>
+        <li>Minimisation des données, conservation limitée.</li>
+        <li>Accès restreint et audit.</li>
+        <li>Export & suppression sur demande.</li>
+        <li>Traitements IA potentiellement hors UE (détaillés dans la Politique de confidentialité).</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="onboard" style="background:#4f46e5;color:#fff;">
+    <div class="wrap" style="padding:40px 16px;">
+      <h2>Prêt à connecter votre compte Garmin ?</h2>
+      <p>Vous serez redirigé pour autoriser l’accès. Révocable à tout moment.</p>
+      <a class="btn" style="background:#fff;color:#4f46e5;" href="#">Continuer</a>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap" style="padding:40px 16px;">
+      <h2>FAQ</h2>
+      <details class="card"><summary><strong>Quelles données lisez-vous ?</strong></summary><p>Uniquement les données nécessaires (résumés quotidiens et, si autorisé, activités détaillées).</p></details>
+      <details class="card"><summary><strong>Puis-je révoquer l’accès ?</strong></summary><p>Oui, à tout moment. Export et suppression disponibles.</p></details>
+      <details class="card"><summary><strong>Mes données sortent-elles de l’UE ?</strong></summary><p>Nous privilégions l’UE. Certains traitements IA peuvent être hors UE (voir Politique de confidentialité).</p></details>
+    </div>
+  </section>
+
+  <section id="contact" style="background:#f7f7fb;">
+    <div class="wrap" style="padding:40px 16px;">
+      <h2>Contact</h2>
+      <p>Une question ? Écrivez-nous.</p>
+      <p><a href="mailto:hello@coah2pt.app">hello@coah2pt.app</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center; padding:14px 16px;">
+      <small class="muted">© <span id="y"></span> coah2PT — Tous droits réservés.</small>
+      <div><a href="privacy.html">Confidentialité</a> · <a href="terms.html">Conditions</a></div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
